@@ -1,0 +1,41 @@
+.game-name {
+    text-align: center;
+    color: white;
+}
+
+.board-row {
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+.game-status {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        color: white;
+    }
+    50% {
+        transform: translateY(5px);
+        color: rgba(255, 255, 255, 0.641);
+    }
+}
+
+.game-stopper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.322);
+    display: none;
+    z-index: 9999;
+}
