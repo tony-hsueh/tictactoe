@@ -8,7 +8,6 @@ const socket = io('http://localhost:3001');
 function Board() {
     const [value, setValue] = useState(Array(9).fill(null));
     const [xIsNext,setxIsNext] = useState(true);
-    const [currentPlayer,setCurrentPlayer] = useState('X');
     const winner = calculateWinner(value);
     let status;
 
