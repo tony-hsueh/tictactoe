@@ -39,3 +39,16 @@
     display: none;
     z-index: 9999;
 }
+
+.canvas-area {
+    position: relative;
+    z-index: 99;
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: none;
+}
