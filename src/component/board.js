@@ -3,8 +3,7 @@ import Square from "./square";
 import './board.css';
 import { io } from "socket.io-client";
 
-// const socket = io('https://gametictoe.herokuapp.com/');
-const socket = io('http://localhost:3001/');
+const socket = io(process.env.REACT_APP_URL);
 
 function Board() {
     const [value, setValue] = useState(Array(9).fill(null));
